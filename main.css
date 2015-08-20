@@ -1,0 +1,294 @@
+/*-----------------------------------------------------------------------------------
+border-box formatting so padding/margin doesn't effect percentage widths
+-----------------------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                general styling
+-----------------------------------------------------------------------------------*/
+
+body {
+  background-color: #424242;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+/*-----------------------------------------------------------------------------------
+                  utilities
+-----------------------------------------------------------------------------------*/
+
+.hide {
+  display: none;
+}
+
+/*.container {
+  padding: 15px;
+}*/
+  
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                  header
+-----------------------------------------------------------------------------------*/
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  background: rgba(200, 200, 200, 0.5);
+  border-bottom: black 1px solid;
+  z-index: 999;
+}
+
+.header__navigation {
+  position: absolute;
+  display: none;
+}
+
+.header__navigation.show {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 51px;
+  font-size: 18px;
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.header__navigation a {
+  color: black;
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.hamburger {
+  width: 30px;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                  button styling
+-----------------------------------------------------------------------------------*/
+
+button {
+  border: 1px solid white;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+  text-transform: lowercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+button a {
+  display: block;
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                 body
+-----------------------------------------------------------------------------------*/
+
+
+.square {
+  position: relative;
+}
+
+.square img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  text-align: center;
+  padding-top: 30%;
+  top: 0;
+  width: 100%;
+  background: rgba(250, 245, 239, 0.55);
+}
+
+.overlay:hover {
+  background: rgba(250, 245, 239, 0.5);
+}
+
+.one .overlay {
+  top: 0px;
+  height: 100%;
+}
+
+.two {
+  top: -4px;
+}
+
+.two .overlay {
+  top: 0px;
+  height: 99%;
+}
+
+.three {
+  top: -8px;
+}
+
+.three .overlay {
+  top: 0px;
+  height: 99%;
+}
+
+.four {
+  top: -10px;
+}
+
+.four .overlay {
+  top: 0px;
+  height: 99%;
+}
+
+.five {
+  top: -13px;
+}
+
+.five .overlay {
+  top: 0px;
+  height: 100%;
+}
+
+.six {
+  top: -16px;
+}
+
+.six .overlay {
+  top: 0px;
+  height: 99%;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                  footer
+-----------------------------------------------------------------------------------*/
+
+footer {
+  color: white;
+}
+
+.footer-container {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  padding: 25px 15px 35px;
+  top: -3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.footer--image {
+  float: left;
+  width: 25%;
+  opacity: .3;
+}
+
+.footer--image:hover {
+  opacity: .7;
+}
+
+.footer--image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+}
+
+.dg_logo {
+  margin: 20px 0px 30px;
+}
+
+.dg_logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  opacity: .4;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                  full screen
+-----------------------------------------------------------------------------------*/
+
+@media (min-width: 700px) {
+  
+  header {
+    position: relative;
+    margin: auto;
+    width: 95%;
+  }
+  
+  .container {
+    position: relative;
+    margin: auto;
+    width: 95%;
+  }
+  
+  .square {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+  
+  .square img {
+    height: 100%;
+  }
+  
+  .two {
+    top: 0;
+  }
+  
+  .three {
+    top: -20px;
+  }
+  
+  .four {
+    top: -20px;
+  }
+  
+  .five {
+    top: -42px;
+  }
+  
+  .six {
+    top: -43px;
+  }
+
+  .footer-container {
+    top: -3px;
+  }
+  
+}
