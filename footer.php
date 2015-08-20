@@ -23,7 +23,9 @@
       </div>
       <div style="clear: both"></div>
       <div class="dg_logo">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dg-logo.png">
+        <a href="<?php echo get_stylesheet_directory_uri(); ?>/index.php">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dg-logo.png">
+        </a>
       </div>
     </footer>
 

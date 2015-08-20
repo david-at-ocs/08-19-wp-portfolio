@@ -1,0 +1,228 @@
+/*-----------------------------------------------------------------------------------
+border-box formatting so padding/margin doesn't effect percentage widths
+-----------------------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                general styling
+-----------------------------------------------------------------------------------*/
+
+body {
+  background-color: #424242;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+
+
+/*-----------------------------------------------------------------------------------
+                  utilities
+-----------------------------------------------------------------------------------*/
+
+.hide {
+  display: none;
+}
+
+/*.container {
+  padding: 15px;
+}*/
+  
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                  header
+-----------------------------------------------------------------------------------*/
+
+header {
+  width: 100%;
+  padding: 15px;
+  background: rgba(200, 200, 200, 0.5);
+  border-bottom: black 1px solid;
+  z-index: 999;
+}
+
+.header__navigation ul {
+  position: absolute;
+  display: none;
+}
+
+.header__navigation.show ul {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100px;
+  font-size: 18px;
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  z-index: 990;
+}
+
+.header__navigation a {
+  color: black;
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.hamburger {
+  width: 30px;
+}
+
+
+
+/*-----------------------------------------------------------------------------------
+                 body
+-----------------------------------------------------------------------------------*/
+
+
+
+.square {
+  position: relative;
+}
+
+.square img {
+  width: 100%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.overlay {
+  background-image: url('img/shotglasses.png');
+  width: 100%;
+  background: rgba(250, 245, 239, 0.55);
+}
+
+.post_img {
+/*  float: left;*/
+/*  width: 65%;*/
+  padding: 30px;
+}
+
+.post_links {
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+.post_links h1 {
+  margin: 0;
+  padding: 15px 0px;
+}
+
+.overlay img {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  box-shadow: 5px 5px 10px #545454;
+}
+
+/*-----------------------------------------------------------------------------------
+                  full screen
+-----------------------------------------------------------------------------------*/
+
+@media (min-width: 600px) {
+
+  header {
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(200, 200, 200, 0.5);
+    border-bottom: black 1px solid;
+    z-index: 999;
+  }
+
+  .container {
+    background-image: url('img/shotglasses.png');
+    width: 95%;
+    margin: auto;
+  }
+  
+  .post_img {
+    float: left;
+    width: 65%;
+    padding: 30px;
+  }
+
+  .post_links h1 {
+    margin: 0;
+    padding: 29px 0px;
+    font-size: 35px;
+  }
+  
+}
+
+/*-----------------------------------------------------------------------------------
+                  footer
+-----------------------------------------------------------------------------------*/
+
+footer {
+  color: white;
+}
+
+.footer-container {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  padding: 25px 15px 35px;
+  top: -3px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.footer--image {
+  float: left;
+  width: 25%;
+  opacity: .3;
+}
+
+.footer--image:hover {
+  opacity: .7;
+}
+
+.footer--image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+}
+
+.dg_logo {
+  margin: 20px 0px 30px;
+}
+
+.dg_logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  opacity: .4;
+}
+
+

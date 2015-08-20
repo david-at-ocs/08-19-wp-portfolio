@@ -12,21 +12,50 @@
 get_header(); ?>
 
 
-	<?php if ( have_posts() ) : ?>
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part('template-parts/content'); ?>
-
-		<?php endwhile; ?>
-
-		<?php the_posts_navigation(); ?>
-
-	<?php else : ?>
-
-		<p>No posts.</p>
-
-	<?php endif; ?>
+      <section class="square one">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shotglasses.png" alt="Shot glasses, black and white">
+        <div class="overlay">
+          <button><a href="<?php echo get_stylesheet_directory_uri(); ?>/about-david">about</a></button>
+        </div>
+      </section>
+      
+      <section class="square two">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cb-downtown.png" alt="Old building">
+        <div class="overlay">
+          <button><a href="<?php echo get_stylesheet_directory_uri(); ?>/web">web work</a></button>
+        </div>
+      </section>
+      <div style="clear: both"></div>
+      
+      <section class="square three">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cb.png" alt="Dilapitated building">
+        <div class="overlay">
+          <button><a href="<?php echo get_stylesheet_directory_uri(); ?>/photography">photograhpy</a></button>
+        </div>
+      </section>
+      
+      <section class="square four">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/blurryOlivia.png" alt="Blurry girl in city">
+        <div class="overlay">
+          <button><a href="<?php echo get_stylesheet_directory_uri(); ?>/screenprinting">screen printing</a></button>
+        </div>
+      </section>
+      <div style="clear: both"></div>
+      
+      <section class="square five">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cb-bricks.png" alt="Exposed bricks on street">
+        <div class="overlay">
+          <button><a href="<?php echo get_stylesheet_directory_uri(); ?>/contact">contact</a></button>
+        </div>
+      </section>
+      
+      <section class="square six">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nef1.png" alt="Close up of Nefertiti statue">
+        <div class="overlay">
+          <!-- <button><a href="contact.html">contact</a></button> -->
+        </div>
+      </section>
+      <div style="clear: both"></div>
 
 <?php get_footer(); ?>
