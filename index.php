@@ -16,7 +16,7 @@ get_header(); ?>
       <section class="square one">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shotglasses.png" alt="Shot glasses, black and white">
         <div class="overlay">
-          <button><a href="<?php echo get_stylesheet_directory_uri(); ?>/about-david">about</a></button>
+          <button><a href="<?php echo get_stylesheet_directory_uri(); ?>/about">about</a></button>
         </div>
       </section>
       
