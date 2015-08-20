@@ -62,12 +62,12 @@ header {
   z-index: 999;
 }
 
-.header__navigation {
+.header__navigation ul {
   position: absolute;
   display: none;
 }
 
-.header__navigation.show {
+.header__navigation.show ul {
   display: block;
   position: absolute;
   width: 100%;
