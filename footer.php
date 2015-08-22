@@ -23,7 +23,7 @@
       </div>
       <div style="clear: both"></div>
       <div class="dg_logo">
-        <a href="<?php echo get_stylesheet_directory_uri(); ?>/index.php">
+        <a href="http://www.davidgardetti.com">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dg-logo.png">
         </a>
       </div>
