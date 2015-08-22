@@ -98,7 +98,8 @@ header {
                   button styling
 -----------------------------------------------------------------------------------*/
 
-button {
+.button {
+  display: inline-block;
   border: 1px solid white;
   padding: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -107,7 +108,7 @@ button {
   letter-spacing: 2px;
 }
 
-button a {
+.button a {
   display: block;
   color: white;
   padding: 5px 15px;
