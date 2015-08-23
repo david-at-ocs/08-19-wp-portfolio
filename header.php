@@ -25,7 +25,7 @@
   <!-- <?php bloginfo( 'description' ); ?> -->
 
   <header>
-    <p class="float_left"><a href="<?php echo get_stylesheet_directory_uri(); ?>">portfolio for david gardetti</a></p>
+    <p class="float_left"><a href="<?php echo site_url(); ?>">portfolio for david gardetti</a></p>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hamburger.png" class="hamburger float_right" id="hamburger">
     <div style="clear: both"></div>
     
