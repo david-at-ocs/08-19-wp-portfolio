@@ -23,7 +23,7 @@ get_header(); ?>
       <section class="square two">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cb-downtown.png" alt="Old building">
         <div class="overlay">
-          <div class="button"><a href="<?php echo site_url(); ?>/web">web work</a></div>
+          <div class="button"><a href="<?php echo site_url(); ?>/contact">contact</a></div>
         </div>
       </section>
       <div style="clear: both"></div>
@@ -31,29 +31,14 @@ get_header(); ?>
       <section class="square three">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cb.png" alt="Dilapitated building">
         <div class="overlay">
-          <div class="button"><a href="<?php echo site_url(); ?>/photography">photograhpy</a></div>
+          <div class="button"><a href="<?php echo site_url(); ?>/web">web work</a></div>
         </div>
       </section>
       
       <section class="square four">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/blurryOlivia.png" alt="Blurry girl in city">
         <div class="overlay">
-          <div class="button"><a href="<?php echo site_url(); ?>/screenprinting">screen printing</a></div>
-        </div>
-      </section>
-      <div style="clear: both"></div>
-      
-      <section class="square five">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cb-bricks.png" alt="Exposed bricks on street">
-        <div class="overlay">
-          <div class="button"><a href="<?php echo site_url(); ?>/contact">contact</a></div>
-        </div>
-      </section>
-      
-      <section class="square six">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nef1.png" alt="Close up of Nefertiti statue">
-        <div class="overlay">
-          <!-- <div class="button"><a href="contact.html">contact</a></div> -->
+          <div class="button"><a href="<?php echo site_url(); ?>/photography">photograhpy</a></div>
         </div>
       </section>
       <div style="clear: both"></div>

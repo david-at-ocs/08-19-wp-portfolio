@@ -26,8 +26,26 @@ p {
   margin: 0;
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #aaa;
+}
+
 h1 {
   font-weight: 300;
+}
+
+h2 {
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 
@@ -143,6 +161,32 @@ header {
   box-shadow: 5px 5px 10px #545454;
 }
 
+
+.ngg-gallery-thumbnail {
+  float: left;
+  margin-top: 20px;
+}
+
+.ngg-gallery-thumbnail img {
+  width: 200px;
+}
+  
+.weblinks {
+  position: relative;
+  float: left;
+  padding: 30px 0px 0px 10px;
+}
+
+.weblinks p {
+  margin-top: 5px;
+}
+
+.weblinks img {
+  margin-top: 20px;
+  width: 25px;
+  box-shadow: 0px 0px 0px #545454;
+}
+
 /*-----------------------------------------------------------------------------------
                   full screen
 -----------------------------------------------------------------------------------*/
@@ -167,7 +211,7 @@ header {
   
   .post_img {
     float: left;
-    width: 65%;
+    width: 85%;
     padding: 30px;
   }
 
@@ -180,6 +224,31 @@ header {
     margin: 0;
     padding: 29px 0px;
     font-size: 35px;
+  }
+
+
+  .ngg-gallery-thumbnail {
+    float: left;
+    margin-top: 20px;
+  }
+
+  .ngg-gallery-thumbnail img {
+    width: 300px;
+  }
+  
+  .weblinks {
+    position: relative;
+    float: left;
+    padding: 30px 0px 0px 10px;
+    width: 45%;
+  }
+  
+  .weblinks p {
+    margin-top: 5px;
+  }
+  
+  .weblinks img {
+    box-shadow: 0px 0px 0px #545454;
   }
   
 }
